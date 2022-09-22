@@ -1,0 +1,87 @@
+
+body{
+  background-image:url("../media/heir.jpg") ;
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+@media screen and (max-width: 800px) {
+  body{
+    background-image: none;
+    background-color:black ;
+  }
+}
+.hamburger{
+  position: relative;
+  display: block;
+  margin: 3%;
+  margin-left: 92%;
+  width: 32px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.bar, .hamburger:before, .hamburger:after{
+  width:100%;
+  background-color: white;
+  margin: 5px;
+  height: 2px;
+  content: ' ';
+  display: block;
+  transition: 0.4s;
+}
+
+.hamburger:active::before{
+  transform: rotate(45deg) translate(10px,11px);
+  transition: 0.2s;
+}
+.hamburger:active::after{
+  transform: rotate(-45deg) translate(-5px,5.5px);
+  transition: 0.2s;
+}
+.content-container{
+  width: 60%;
+  margin: 25% auto 10%;
+  padding: 2%;
+} 
+
+.main-content{
+  background-color: rgba(0,0,0, 0.75);
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  padding: 3%;
+  color:white;
+}
+/*  characters page */
+.container{
+  background-color: rgba(127, 127, 127, 0.2);
+  border-radius: 10px;
+  margin: 12% auto;
+  padding: 2%;
+  text-align: center;
+  width: 40%;
+}
+.col-2{
+  
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  margin: auto;
+  padding: 10px;
+}
+.col-2:hover{
+  transform: translate(0px,2px);
+  transition: 0.2s;
+}
+.row{
+  margin-bottom: 2%;
+}
+.icon{
+  height: 20vh;
+}
+
+.char-name{
+  margin: 5% auto;
+}
