@@ -1,62 +1,71 @@
-
 html, body{
   background-image:url("../media/heir.jpg") ;
   background-size: 100% 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-family: 'GFS Didot', serif;
 }
-.home-nav{
-  display: flex;
-  justify-content: space-around;
-  margin: auto;
-  width: 70%;
-  position: relative;
-  top: 140px;
-}
-.home-nav li{
-  background-color: rgba(32, 30, 30,0.8);
-}
+
 .menu-nav{
   display: flex;
-  background-color: rgba(32, 30, 30,0.8);
+  background-color: #060100;
 }
-.menu-nav li, .home-nav li{
-  list-style-type: none;
-  padding: 1% 2.5%;
+.dropdown menu{
+  position: relative;
+  display: inline-block;
 }
-.menu-nav a, .home-nav a{
-  text-decoration: none;
-  text-transform: uppercase;
+.dropbtn, .dropdown-content a{
+  background-color: rgba(22, 21, 21, 0.8);
   color: white;
-  font-size: 17px;
+  text-transform: uppercase;
 }
-.menu-nav li:hover,
-.home-nav li:hover{
-  box-shadow: 1px 0px 10px 0px #865858;
-  transition: 0.125s;
+.dropbtn{
+  background-color: #060100;
+  font-size: 19px;
+  letter-spacing: 4px;
+  height: 100%;
+  width: 152px;
+  margin-left: 19px;
+  border: none;
 }
-.menu-nav li:active, 
-.home-nav li:active{
-  background-color: rgb(207, 198, 198);
-  transition: 0.125s ease-in-out;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  z-index: 1;
+}
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin-left: 20px;
 }
 
-.menu-nav a:active, 
-.home-nav a:active{
-  color: hwb(0 35% 47%);
-  transition: 0.125s;
+.dropbtn:hover,
+.dropdown-content a:hover{
+  background-color: rgba(22, 21, 21, 0.4);
+  box-shadow: 1px 0px 10px 0px #865858;
+  transition: 0.125s ease-in-out;
 }
+.dropbtn:active,
+.dropdown-content a:active{
+  background-color: rgb(207, 198, 198);
+  transition: 0.125s ease-in-out;
+  color: hwb(0 35% 47%);
+}
+
 .profile-icon{
-  margin: 0.35% 2% 0;
+  margin: 0.35% 1.75% 0;
 }
 /* Home Page */
 .home-container{
   width: 60%;
-  margin: 30% auto 5%;
+  margin: 27% auto 5%;
   padding: 2%;
 } 
 
@@ -138,17 +147,43 @@ html, body{
     width: 100vw;
   }
 }
+
 .form-caption{
   font-size: 18px;
   background-color: rgba(127, 127, 127, 0.2);
   border-radius: 2px;
-  padding: 6px 20px 6px 0;
   margin-bottom:10%;
+  text-transform: uppercase;
   color: rgb(214, 98, 40);
 }
 .heir-submit{
   color: white;
   background-color: rgb(32, 30, 30);
   padding: 6px 15px;
+  margin-left: 22%;
 }
 
+/* Forum page */
+.forum-pg-container{
+  background-color: rgba(6, 1, 0, 0.9);
+  width: 80%;
+  margin: 4% auto;
+}
+.video-container{
+  padding-top: 2%;
+  text-align: center;
+}
+.video-title{
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  color:white;
+}
+.forum-container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.response-form label{
+  color: white;
+}
