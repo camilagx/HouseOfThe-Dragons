@@ -9,20 +9,6 @@ html, body{
   padding: 0;
   font-family: 'GFS Didot', serif;
 }
-@media screen and (max-width: 800px) {
-  html,body{
-    background-image: none;
-  }
-  .char-page-container{
-    display:flex;
-    flex-direction: column;
-    background-color: black;
-    align-items: center;
-  }
-  .char-container{
-    width: 100vw;
-  }
-}
 .home-nav{
   display: flex;
   justify-content: space-around;
@@ -31,13 +17,15 @@ html, body{
   position: relative;
   top: 140px;
 }
+.home-nav li{
+  background-color: rgba(32, 30, 30,0.8);
+}
 .menu-nav{
   display: flex;
-  justify-content: flex-end;
+  background-color: rgba(32, 30, 30,0.8);
 }
 .menu-nav li, .home-nav li{
   list-style-type: none;
-  background-color: rgba(32, 30, 30,0.8);
   padding: 1% 2.5%;
 }
 .menu-nav a, .home-nav a{
@@ -51,11 +39,20 @@ html, body{
   box-shadow: 1px 0px 10px 0px #865858;
   transition: 0.125s;
 }
-.menu-nav a:hover, 
-.home-nav a:hover{
-  color: white;
+.menu-nav li:active, 
+.home-nav li:active{
+  background-color: rgb(207, 198, 198);
+  transition: 0.125s ease-in-out;
 }
 
+.menu-nav a:active, 
+.home-nav a:active{
+  color: hwb(0 35% 47%);
+  transition: 0.125s;
+}
+.profile-icon{
+  margin: 0.35% 2% 0;
+}
 /* Home Page */
 .home-container{
   width: 60%;
@@ -80,10 +77,9 @@ html, body{
   padding: 5%;
   padding-top: 0;
   text-align: center;
-
 }
 .col-md-3{
-  background-color: rgba(0, 0, 0, 0.57);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border: 0.2px solid rgba(127, 127, 127, 0.2);
   margin: 0 auto;
@@ -94,7 +90,7 @@ html, body{
 }
 .character:hover{
   transform: translate(0px,2px);
-  transition: 0.2s;
+  transition: 0.125s ease-in-out;
 }
 .icon{
   height: 20vh;
@@ -103,7 +99,7 @@ html, body{
 }
 @media screen and (max-width: 768px) {
   .icon{
-    height: 17vh;
+    height: 23vh;
     width: 30%;
   }
 }
@@ -112,7 +108,6 @@ html, body{
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 4px;
 }
-
 
 .char-container{
   width: 60%;
@@ -128,14 +123,32 @@ html, body{
   text-align: left;
   width: 18vw;
 }
-
+@media screen and (max-width: 800px) {
+  html,body{
+    background-image: none;
+    background-color: rgb(32, 30, 30);
+  }
+  .char-page-container{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(32, 30, 30);
+    align-items: center;
+  }
+  .char-container{
+    width: 100vw;
+  }
+}
 .form-caption{
   font-size: 18px;
   background-color: rgba(127, 127, 127, 0.2);
   border-radius: 2px;
-  padding: 2px 5px;
+  padding: 6px 20px 6px 0;
+  margin-bottom:10%;
+  color: rgb(214, 98, 40);
 }
-
-
-
+.heir-submit{
+  color: white;
+  background-color: rgb(32, 30, 30);
+  padding: 6px 15px;
+}
 
