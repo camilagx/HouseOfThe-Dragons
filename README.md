@@ -1,5 +1,5 @@
 
-# HouseOfTheDragons
+# House Of The Dragons
 
 ## Overview
 
@@ -15,5 +15,5 @@ The website consist of 3 pages: home, characters, and forum. The home page intro
 
  ###### Tools used:
  
- -Bootstrap
+ Bootstrap
 
