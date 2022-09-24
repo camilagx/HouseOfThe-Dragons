@@ -8,12 +8,14 @@ This website was inspired by the new HBO series "House of the Dragons." It pulls
 ## Workflow
 The website consist of 3 pages: Home, Characters, and Forum. The Home page introduces the "House of the Dragons" series and contains a menu that'll take you to the characters page or forum. The Characters page will display all the main characters and submit your chosen heir. Lastly, the Forum page will allow you to share your experience with other GOT/HOTD fans.
 
+**Live Demo:** https://camilagx.github.io/HouseOfThe-Dragons/
+
 ###### Language used:
 
 - HTML & CSS
 - JavaScript
 
- ###### Tools used:
- 
- Bootstrap
+###### Tools used:
+
+Bootstrap
 
