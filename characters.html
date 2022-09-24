@@ -12,7 +12,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <!-- External CSS -->
-  <link rel="stylesheet" href="css/home-style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media-style.css">
+  <script src="behavior/script.js" defer></script>
 </head>
 <body>
   <nav class="menu-nav">
@@ -139,10 +141,10 @@
       </div> <!-- end of 3rd row-->
     </div><!--container closing tag-->
     </div> <!-- char-container closing-->
+    <div class="sidebar">
     <div class="heir-container">
+      <h3 class="heading-caption">Choose your heir: </h3>
       <form class="heir-form">
-        <h2 class="form-caption">Choose your heir: </h2>
-    
         <input type="radio" id="rhaenyra" name="heir">
         <label for="rhaenyra">Rhaenyra</label><br/>
     
@@ -154,6 +156,23 @@
         <br />
         <input class="heir-submit" type="submit"></input>
       </form>
+    </div>
+    <div class="list-container">
+      <div class="list-characters">
+        <h3 class="heading-caption">Character list: </h3>
+        <div id=names-container>
+          <!-- Creating list with JS-->
+        </div>
+      </div>
+      <div class="list-controls">
+        <button id="sort-list-asc">
+          Sort asc
+        </button>
+        <button id="sort-list-desc">
+          Sort desc
+        </button>
+      </div>
+    </div>
     </div>
   </div>
 </body>

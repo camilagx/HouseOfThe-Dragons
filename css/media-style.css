@@ -1,0 +1,48 @@
+@media screen and (max-width: 800px){
+  html,body{
+    background-image: none;
+    background-color: rgb(32, 30, 30);
+  }
+  .char-page-container{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(32, 30, 30);
+    align-items: center;
+  }
+  .char-container{
+    width: 100vw;
+  }
+  .char-name{
+    background-color: rgba(127, 127, 127, 0.2);
+    letter-spacing: 1px;
+    padding: 1%;
+  }
+  .col-md-3{
+    border:none;
+  }
+  .heir-container,
+  .list-characters,
+  .list-container{
+    width: 65vw;
+  }
+  .list-characters{
+    margin-top: 8%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .icon{
+    height: 35vh;
+    width: 42%;
+    padding: 5%;
+  }
+  .home-container{
+    margin: 70% auto 5%;
+    width: 75%;
+  } 
+  .home-nav li{
+    border: 1px solid white;
+  }
+  .profile-icon{
+    margin-left: 10px;
+  }
+}

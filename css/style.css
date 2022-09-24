@@ -10,6 +10,7 @@ html, body{
   display: flex;
   background-color: #060100;
 }
+
 .dropdown menu{
   position: relative;
   display: inline-block;
@@ -53,7 +54,11 @@ html, body{
   transition: 0.125s ease-in-out;
 }
 .dropbtn:active,
-.dropdown-content a:active{
+.dropdown-content a:active,
+.heir-submit:active,
+#response-submit:active,
+#sort-list-asc:active,
+#sort-list-desc:active{
   background-color: rgb(207, 198, 198);
   transition: 0.125s ease-in-out;
   color: hwb(0 35% 47%);
@@ -65,7 +70,7 @@ html, body{
 /* Home Page */
 .home-container{
   width: 60%;
-  margin: 27% auto 5%;
+  margin: 30% auto 5%;
   padding: 2%;
 } 
 
@@ -94,7 +99,7 @@ html, body{
   margin: 0 auto;
   padding: 5px;
 }
-.char-container, .heir-container{
+.char-container, .sidebar{
   vertical-align: text-top;
 }
 .character:hover{
@@ -106,15 +111,10 @@ html, body{
   width: 58%;
   padding: 2%;
 }
-@media screen and (max-width: 768px) {
-  .icon{
-    height: 23vh;
-    width: 30%;
-  }
-}
 .char-name{
+  font-size: 18px;
   margin: 5% auto;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 4px;
 }
 
@@ -122,68 +122,113 @@ html, body{
   width: 60%;
   display: inline-block;
 }
-.heir-container{
-  background-color: rgba(0, 0, 0, 0.6);
-  margin-left: 2%;
-  border-radius: 5px;
-  padding: 1% 3%;
-  color: white;
+.sidebar{
   display: inline-block;
-  text-align: left;
+}
+.heir-container,
+.list-characters,
+.list-container{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 5px;
   width: 18vw;
 }
-@media screen and (max-width: 800px) {
-  html,body{
-    background-image: none;
-    background-color: rgb(32, 30, 30);
-  }
-  .char-page-container{
-    display:flex;
-    flex-direction: column;
-    background-color: rgb(32, 30, 30);
-    align-items: center;
-  }
-  .char-container{
-    width: 100vw;
-  }
+.list-container{
+  background-color: transparent;
 }
 
-.form-caption{
-  font-size: 18px;
-  background-color: rgba(127, 127, 127, 0.2);
-  border-radius: 2px;
-  margin-bottom:10%;
-  text-transform: uppercase;
-  color: rgb(214, 98, 40);
+.heir-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 3%;
+  text-align: left;
 }
-.heir-submit{
+
+.list-characters{
+  margin-top: 20%;
+  line-height: 2;
+  height: 40vh;
+  overflow: hidden;
+  padding: 5%;
+}
+.heading-caption{
+  font-size: 18px;
+  width: 70%;
+  background-color: rgba(207, 198, 198,0.2);
+  border-radius: 2px;
+  margin: 0 auto 5%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgb(241, 108, 41);
+}
+.heir-submit,
+.list-controls button{
   color: white;
   background-color: rgb(32, 30, 30);
   padding: 6px 15px;
-  margin-left: 22%;
+  height: 30%;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.5px;
 }
 
+.list-controls asc{
+  width: 40%;
+}
+.list-controls desc{
+  width: 60%;
+}
 /* Forum page */
+
+/* Contains video and forum container to display flex*/
 .forum-pg-container{
-  background-color: rgba(6, 1, 0, 0.9);
+  background-color: rgba(6, 1, 0,0.95);
   width: 80%;
   margin: 4% auto;
-}
-.video-container{
-  padding-top: 2%;
-  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .video-title{
-  text-align: center;
   padding: 15px;
   font-size: 20px;
   color:white;
 }
-.forum-container{
-  width: 80%;
-  margin: 0 auto;
-}
 
+.forum-container{
+  margin: 0 auto;
+  width: 100%;
+}
+.response-form{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin: 0 auto;
+  width: 40%;
+}
 .response-form label{
   color: white;
+  margin-right: 2%;
+} 
+
+.response-form textarea{
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  border: 1px solid black;
+  padding: 7px;
+}
+.response-form ::placeholder{
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.response-form textarea::placeholder{
+  padding: 2px 5px;
+}
+
+#response-submit{
+  color: white;
+  background-color: rgb(32, 30, 30);
+  padding: 5px 20px;
 }
